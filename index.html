@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Freja Kahle Virtual Resume</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body class="dark" id="home">
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large teal darken-2">
+            <i class="large material-icons" style="font-size: 36px;">memory</i>
+        </a>
+        <ul>
+            <li><a href="Resume.pdf" target="_blank" class="btn-floating teal darken-2" title="One Page Resume Download"><i class="material-icons">file_download</i></a></li>
+            <li><a href="tel:513-222-3229" class="btn-floating teal darken-2" title="Call"><i class="material-icons">phone</i></a></li>
+            <li><a href="mailto:kahlecw@mail.uc.edu" class="btn-floating teal darken-2" title="email"><i class="material-icons">mail</i></a></li>
+            <li><a href="javascript:toggleViewMode()" id="view_toggle_button" class="btn-floating teal darken-2"><i class="material-icons">brightness_7</i></a></li>
+        </ul>
+    </div>
+    <div class="navbar-fixed">
+        <nav role="navigation" class="text-back">
+            <div class="nav-wrapper container" style="width:100%;">
+                <div class="row" style="margin: 0;">
+                    <div class="col" style="width:5%;">
+                        <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="right: 3em;"><i class=" material-icons">menu</i></a>
+                    </div>
+                    <div class="col" style="width:40%">
+                        <ul class="right hide-on-med-and-down">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#skills">Skills</a></li>
+                            <li><a href="#courses">Courses</a></li>
+                            <li><a href="#experience">Experience</a></li>
+                        </ul>
+                    </div>
+                    <div class="col" style="width:10%">
+                        <a id="logo-container" href="#home" class="brand-logo center" style="font-size: 25px;">Freja Kahle</a>
+                    </div>
+                    <div class="col" style="width:auto">
+                        <ul class="left hide-on-med-and-down">
+                            <li><a href="#projects">Projects</a></li>
+                            <li><a href="#activities">Activities</a></li>
+                            <li><a href="#resumeanchor">One-Page</a></li>
+                            <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul id="nav-mobile" class="sidenav text-back sidenav-close" style="border-radius: 0;">
+        <li><a href="#home" onclick="closeNav();">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#courses">Courses</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#resumeanchor">One-Page</a></li>
+        <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
+    </ul>
+    <div class="row center" style="margin: 3vh">
+        <img class="circle responsive-img transg" src="images/profshot.jpg" style="height:250px;">
+    </div>
+    <div class="parallax-container" style="height: 550px;">
+        <div class="section no-pad-bot">
+            <div class="container">
+                <div class="row">
+                    <h1 class="header center"><span class="text-back hide-on-small-only">Freja Kahle</span></h1>
+                    <h1 class="header center text-back hide-on-med-and-up" style="width: fit-content;margin-right: auto;margin-left: auto; border-radius: 0.5em;">Freja<br>Kahle</h1>
+                    <h5 class="header center"><span class="text-back z-depth-2">(She/Her/Hers)</span></h5>
+                </div>
+                <div class="row center">
+                    <div class="flow-text col m8 s12 offset-m2 text-back">
+                        <p>University of Cincinnati</p>
+                        <p class="hide-on-small-only">College of Engineering and Applied Sciences</p>
+                        <p class="hide-on-med-and-up" style="font-size: 3.85vw;">College of Engineering and Applied Sciences</p>
+                        <p>B.S. Computer Science 2025</p>
+                    </div>
+                </div>
+                <div class="center">
+                    <br>
+                    <a href="tel:513-222-3229" class="col m5 offset-m1 s6 center"><u><span class="flow-text text-back">(513)-222-3229</span></u></a>
+                    <br class="hide-on-med-and-up">
+                    <a href="mailto:kahlecw@mail.uc.edu" class="col m5 s6 center"><u><span class="flow-text text-back">kahlecw@mail.uc.edu</span></u></a>
+                </div>
+            </div>
+        </div>
+        <a class="text-back bottomleft" style="opacity: 0.6; font-size: 12px;" href="images/GardenOfTheGods.jpg" target="blank"><u>Image</u> photographed at<span class="hide-on-med-and-up">:<br></span> Garden Of The Gods, Colorado.</a>
+        <div class=" parallax"><img src="images/GardenOfTheGods.jpg" alt="Unsplashed Background, Garden of the Gods, Colorado">
+            <div class="color-overlay"></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="section">
+            <div class="anchor" id="skills">
+                <h3 class="center blue-text text-darken-2">Skills</h3>
+            </div>
+            <div class="row">
+                <h4 class="header center blue-text text-darken-2">Technical Skills</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top: 0.75em; border-color: #405F9F;">
+                <div class="col s12 l3 offset-l1 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Python</li>
+                        <li>C++</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Fusion 360</li>
+                        <li>LabView</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-top: 0; margin-bottom: 0;">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="col s12 l3 offset-l1 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Java</li>
+                        <li>MATLAB</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Raspberry Pi</li>
+                        <li>Office Suite</li>
+                    </ul>
+                </div>
+                <div class="col s12 l4 m5 offset-m1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Javascript</li>
+                        <li>VS Code</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="header center blue-text text-darken-2">Soft Skills</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top:0.75em; border-color: #405F9F;">
+                <div class="col s12 m5 offset-m1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Communicative Clarity</li>
+                        <li>Servant Leadership</li>
+                        <li>Professional Writing</li>
+                    </ul>
+                </div>
+                <div class="col s12 m5 offset-m1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Critical Thinker</li>
+                        <li>Great listener</li>
+                        <li>Storytelling</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row anchor" id="courses">
+                <h3 class="header center green-text text-darken-2">Relevant Coursework</h3>
+            </div>
+            <div class="row">
+                <h4 class="header center green-text text-darken-2">University Courses</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top: 0.75em; border-color: green;">
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>Data Structures and Algorithms</li>
+                        <li>Python Programming</li>
+                        <li>Intro to Computer Systems</li>
+                        <li>Intro to Programming in C++</li>
+                    </ul>
+                </div>
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Discrete Structures</li>
+                        <li>Linear Algebra</li>
+                        <li>Calculus I & II</li>
+                        <li>Engineering and Design Thinking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <h4 class="header center green-text text-darken-2">High School Courses</h4>
+            </div>
+            <div class="row flow-text boxborder" style="padding-top: 0.75em; border-color: green;">
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-bottom: 0; margin-top: 0;">
+                        <li>AP Computer Science</li>
+                        <li>AP Physics</li>
+                    </ul>
+                </div>
+                <div class="col s12 l5 offset-l1 textlist">
+                    <ul style="margin-top: 0;">
+                        <li>Digital Electronics</li>
+                        <li>Intro to Engineering</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center anchor" id="experience">
+                <h3 class="header orange-text text-darken-2">Work Experience</h3>
+            </div>
+            <div class="row center">
+                <h4 class="header orange-text text-darken-2">Jessee's Auto Repair</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: darkorange;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p style="text-align:left;">Cashier
+                        <br>June 2021 - August 2021
+                    </p>
+                    <ul class="textlist">
+                        <li>Provided outstanding service to customers, kept shelves stocked, and tracked inventory and lottery information according to state guidelines</li>
+                        <li>Created a clean, safe environment for all customers and other employees by adhering to COVID-19 guidelines, cleaning floors, shelves, products, and restrooms daily or twice a day</li>
+                        <li>Handled funds from register during close and secured it within company safe each day</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center anchor" id="projects">
+                <h3 class="header purple-text text-darken-1">Relevant Projects</h3>
+            </div>
+            <div class="row center">
+                <h4 class="header purple-text text-darken-1">Fadebot Discord Bot</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: purple;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p style="text-align:left;">Personal Programming Project
+                        <br>November 2020 - January 2022
+                        <br>Co-Author: Adam Zdrojewski
+                        <br><a href="mailto:adam.zdrojewski2@gmail.com">adam.zdrojewski2@gmail.com</a>
+                    </p>
+                    <ul class="textlist">
+                        <li>Designed and programmed an asynchronous python program with the ability to stream audio to and from the internet, mix multiple digital audio signals and output one digital signal</li>
+                        <li>Utilized Discord's bot API to allow users to simultaneously listen to the same music/audio</li>
+                        <li>Debugged hundreds of errors including those relating to asynchronous programming issues, data manipulation errors, and errors when utilizing google's firestore database schema</li>
+                        <li>Coordinated and communicated with co-author to produce continuous flow for user experience</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center">
+                <h4 class="header purple-text text-darken-1">Engineering & Design Thinking Projects</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: purple;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p>University of Cincinnati
+                        <br>August 2020 - May 2021
+                    </p>
+                    <ul class="textlist">
+                        <li>Organized meetings and documented progress of technical projects through world pandemic </li>
+                        <li>Built an EV3 Lego Robot using LabView to follow lines in a simulated environment</li>
+                        <li>Designed, Built, and Tested a device to mitigate the poor air quality found in the most poverty stricken areas of the world</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center anchor" id="activities">
+                <h3 class="header red-text text-darken-2">Other Activities</h3>
+            </div>
+            <div class="row center">
+                <h4 class="header red-text text-darken-2">Engineers Without Borders</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: red;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p>Public Relations Co-Chair
+                        <br>University of Cincinnati
+                        <br>December 2021 - Present
+                    </p>
+                    <ul class="textlist">
+                        <li>Design and curate public website to improve user experience</li>
+                        <li>Work in association with other co-chair to ensure website falls within design guidelines</li>
+                        <li>Allow members of EWB-UC to make use of website tools to operate and with ease</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="row center">
+                <h4 class="header red-text text-darken-2">UC Alliance</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: red;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p>Member
+                        <br>University of Cincinnati
+                        <br>August 2021 - Present
+                    </p>
+                </div>
+            </div>
+            <div class="row center">
+                <h4 class="header red-text text-darken-2">CEAS Tribunal</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: red;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p>Member
+                        <br>University of Cincinnati
+                        <br><span style="font-size:3.85vw;" class="hide-on-med-and-up">College of Engineering and Applied Science</span><span class="hide-on-small-only">College of Engineering and Applied Science</span>
+                        <br>August 2020 - Present
+                        <br>
+                    </p>
+                </div>
+            </div>
+            <div class="row center">
+                <h4 class="header red-text text-darken-2">Scouts BSA</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: red;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p>Assorted Positions
+                        <br>BSA Scout Troop 888
+                        <br>Member
+                        <br>April 2011 - November 2020
+                        <br>
+                        <br>Eagle Scout - 2020
+                        <br>
+                        <ul class="textlist">
+                            <li>Mentored and taught younger scouts to improve survival and leadership skills</li>
+                            <li>Proposed and planned a community service project to raise first flagpole at Loveland Presbyterian Church</li>
+                            <li>Led a team of volunteers to complete all aspects of landscaping, digging, paving, and hoisting required to ensure project's ability to last</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+            <div class="row center">
+                <h4 class="header red-text text-darken-2">Vex Robotics</h4>
+            </div>
+            <div class="row flow-text boxborder" style="border-color: red;">
+                <div class="col s12 m10 offset-m1 l8 offset-l2">
+                    <p>Team Lead & Lead Programmer
+                        <br>Loveland High School
+                        <br>Team 10565C | <i>Battery Acid</i>
+                        <br>August 2018 - May 2020
+                        <br>
+                        <ul class="textlist">
+                            <li>Applied aspects of engineering and design processes to build and program a competetive robot</li>
+                            <li>Collaborated with other team members to schedule a cycle of building and practicing</li>
+                        </ul>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resumeanchor" class="anchor"></div>
+    <div class="parallax-container" style="height: fit-content;">
+        <div class="section no-pad-bot">
+            <div class="container" style="margin-bottom: 6vh;">
+                <div class="row center">
+                    <h3><u>
+                        <canvas id="OPResume" class="ifresume z-depth-1"></canvas>
+                    </u></h3>
+                </div>
+            </div>
+        </div>
+        <a class="text-back bottomleft" style="opacity: 0.6; font-size: 12px;" href="images/Techolympics2017.jpg" target="blank"><u style="margin:0">Image</u> photographed at<span class="hide-on-med-and-up">:<br></span><span class="hide-on-small-only">the</span>Duke Energy Center in Cincinnati, Ohio.</a>
+        <div class="parallax"><img src="images/Techolympics2017.jpg" alt="Unsplashed background img 3"></div>
+    </div>
+
+
+
+    <footer class="page-footer teal">
+        <div class="container" style="padding-bottom: 1em;">
+            Made with <a class="brown-text text-lighten-3" href="http://materializecss.com" target="blank">Materialize CSS</a>
+            <br> Hosted using <a class="brown-text text-lighten-3" href="https://help.github.com/en/articles/what-is-github-pages" target="blank">Github Pages</a>
+        </div>
+    </footer>
+
+    <!--  Scripts  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="js/darkmode.js"></script>
+    <script src="//mozilla.github.io/pdf.js/build/pdf.js"></script>
+    <script type="text/javascript" src="js/pdfview.js"></script>
+    <script>
+        M.AutoInit();
+        loadpdfp1('Resume.pdf', 'OPResume');
+    </script>
+</body>
