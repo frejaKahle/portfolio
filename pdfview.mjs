@@ -1,7 +1,7 @@
 // Loaded via <script> tag, create shortcut to access PDF.js exports.
-var pdfjsLib = window['pdfjs-dist/build/pdf'];
+var { pdfjsLib } = globalThis;
 
-pdfjsLib.GlobalWorkerOptions.workerSrc = '//mozilla.github.io/pdf.js/build/pdf.worker.js';
+pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.10.38/pdf.worker.mjs';
 
 function loadpdfp1(filelocation, canvasid) {
     console.log('Attempting PDF Load');
@@ -38,3 +38,4 @@ function loadpdfp1(filelocation, canvasid) {
         console.error(reason);
     });
 }
+loadpdfp1('Resume.pdf', 'OPResume');
