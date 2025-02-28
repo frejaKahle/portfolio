@@ -73,6 +73,31 @@
             <div class="color-overlay"></div>
         </div>
     </div>
+    <div class="container">
+        <h1 class="center">Projects</h1>
+        <div class ="boxborder" style="border-color: orangered;">
+            <h3 class="center" style="margin-top: 0.35em;">Data Visualization Project 1</h3>
+            <ul>
+                <h5><a href="https://frejakahle.github.io/Data-Vis-Project-1/">Link to Project</a></h5>
+                <h5>Data:</h5>
+                <p style="margin-bottom: 0;">&emsp;The data I used comes from a 2024 dataset including health statistics by county. I wanted to compare the relationship between median household education and high school education level. To be frank, the data is less correlated than I thought it would be.</p>
+                &emsp;<a style="margin-top: 0;">https://github.com/frejaKahle/Data-Vis-Project-1/blob/main/data/national_health_data_2024.csv</a>
+                <h5>Visualization:</h5>
+                <p style="margin-bottom: 0;">&emsp;The visualization comprises of 3 components: A scatter plot, a pair of histograms, and a pair of maps. The number of histogram bins is adjustable via a slider. Another slider allows for culling outliers from the histograms and maps. There is one county that is over 5 standard deviations away from the mean for one of the data sets, so removing it helps showcase the variance more clearly on the maps. You can also highlight bins on the histograms or individual counties with the maps. Highlighting will cut histograms to the range of the selected data, highlight individual points on the scatter plot, and cross out any unhighlighted counties on the map.</p>
+                <h5>Discoveries:</h5>
+                <p style="margin-bottom: 0;">&emsp;As I stated earlier, my main takeaway from doing this was actually the lack of correlation between the data. There is some correlation, for example, there is no outlier higher than the standard deviation in either data type that is also an outlier higher than the mean in the other data type.</p>
+                <h5>Process and Challenges:</h5>
+                <p style="margin-bottom: 0;">&emsp; I took this project one step at a time, using only d3js for the majority of it. I really tried to use more functional programming for this project and I think it came in handy since that is what allowed me to easily create the code for highlighting counties. I had a lot of trouble getting elements to be positioned correctly in the svgs used in the visualization at first and had trouble later getting the graphics to scale with screen size. Near the end I used materialize to help with one of the styles I wanted to create. In the end I'm very proud of the mechanics and visuals I was able to create for the project. I haven't interacted much with svgs before so this was a great learning experience on that front too.</p>
+                <h5>Collaboration and AI:</h5>
+                <p style="margin-bottom: 0;">&emsp;I did not collaborate with anyone, nor did I use AI at all on this project. I did use resources such as StackOverflow and W3schools to help with individual programming challenges.</p>
+                <h5><a href="https://www.youtube.com/watch?v=4cpz0dGbFn0" target="_blank">Video Walkthrough</a></h5>
+                
+                <iframe width="100%" src="https://www.youtube.com/watch?v=4cpz0dGbFn0"></iframe>
+                
+            </ul>
+        </div>
+        
+    </div>
     <div id="resumeanchor" class="anchor"></div>
     <div class="parallax-container" style="height: fit-content;">
         <div class="section no-pad-bot">
