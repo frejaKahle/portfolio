@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Freja Kahle Portfolio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+</head>
+
+<body class="dark" id="home">
+    <div class="fixed-action-btn">
+        <a class="btn-floating btn-large teal darken-2">
+            <i class="large material-icons" style="font-size: 36px;">memory</i>
+        </a>
+        <ul>
+            <li><a href="Resume.pdf" target="_blank" class="btn-floating teal darken-2" title="One Page Resume Download"><i class="material-icons">file_download</i></a></li>
+            <li><a href="tel:513-222-3229" class="btn-floating teal darken-2" title="Call"><i class="material-icons">phone</i></a></li>
+            <li><a href="mailto:kahlecw@mail.uc.edu" class="btn-floating teal darken-2" title="email"><i class="material-icons">mail</i></a></li>
+            <li><a href="javascript:toggleViewMode()" id="view_toggle_button" class="btn-floating teal darken-2"><i class="material-icons">brightness_7</i></a></li>
+        </ul>
+    </div>
+    <div class="navbar-fixed">
+        <nav role="navigation" class="text-back">
+            <div class="nav-wrapper container" style="width:100%;">
+                <div class="row" style="margin: 0;">
+                    <div class="col" style="width:5%;">
+                        <a href="#" data-target="nav-mobile" class="sidenav-trigger" style="right: 3em;"><i class=" material-icons">menu</i></a>
+                    </div>
+                    <div class="col" style="width:100%; display: flex; justify-content: center;">
+                        <ul class="hide-on-med-and-down">
+                            <li><a href="/index.html#home">Home</a></li>
+                            <li><a href="/index.html#resumeanchor">One-Page</a></li>
+                            <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <ul id="nav-mobile" class="sidenav text-back sidenav-close" style="border-radius: 0;">
+        <li><a href="#home" onclick="closeNav();">Home</a></li>
+        <li><a href="#resumeanchor">One-Page</a></li>
+        <li><a href="https://github.com/frejaKahle" target="_blank">Github</a></li>
+    </ul>
+    
+    <div class="container" style="margin-bottom: 20px;">
+        <h1 class="center">Visualization Analysis</h1>
+        <div class ="boxborder" style="border-color: orangered;">
+            <h3 class="center" style="margin-top: 0.35em;">Vis in the wild</h3>
+            <ul>
+                <h5><a href="https://www.behance.net/gallery/100153201/Fossil-Fuels-Dataviz">Visualization:</a></h5>
+                <iframe width="calc(70vw - 1.5em)" height="100%" src="https://graphicprototype.net/vff/" class="responsive-iframe ri4-3"></iframe>
+                <h5>Interactivity:</h5>
+                <p style="margin-bottom: 0;">&emsp;This visualization contains absolutlely no interactivity. The most you can do is scroll the page. However, I would say the visualization is more than interesting enough as a static visualization.</p>
+                <h5>Complexity:</h5>
+                <p style="margin-bottom: 0;">&emsp;The visualization's complexity is pretty high. It is similar to a flow diagram in the way that every data point in both the atmospheric CO2 concentration and Fossil Fuel Emissions graphs has a line conecting to a center point from it's position. Unfortunately, this means it's not a true flow graph as each point is not necessarily 1:1 with another on the other graph.</p>
+                <h5>Purpose:</h5>
+                <p style="margin-bottom: 0;">&emsp;This visualization's purpose is a call to action to reduce carbon emissions. It makes a strong visual connection between fossil fuel emissions and the atmoshperic CO2 concentration while providing a prediction for the next 100 years.</p>
+                <h5>Data:</h5>
+                <p style="margin-bottom: 0;">&emsp;The visualization makes no mention of where it got it's data fZrom or how each point on the graphs represents said data, which is my largest complaint about the visualization.</p>
+                <h5>Questions and Insights:</h5>
+                <p style="margin-bottom: 0;">&emsp;Some insights you can glean from this graph include the distinctly increasing frequency of the points and lines to the point where the translucent lines become opaque with stacking as the year increases. This makes a compelling visual for showing the amount of carbon in the atmosphere increasing. You may begin to wonder about how this will affect climate change and life on Earth in the future.</p>
+                <h5>Design Choices:</h5>
+                <p style="margin-bottom: 0;">&emsp;I think the idea behind the visualization, the flow of the lines, is fantastic. However, everything else about it has somewhat poor implementation. I originally thought the marks for the data as the time (x-axis) increases were labels for the y-axis. It also took a few minutes to realize exactly what the visualization was trying to convey. This format has great potential, but this example is quite poor in my eyes. At the very least, the design of every element besides the cool lines feels rather uninspired. Everything else .</p>
+                <h5>Limitations:</h5>
+                <p style="margin-bottom: 0;">&emsp;This design is limited to two graphs that share some connection. It's not very good at displaying very precise information since the y-axis pretty much can't be used for displaying a dimension of data and instead a visualization has to rely on the opacity of the lines to present.</p>
+            </ul>
+        </div>
+    </div>
+
+    
+    <footer class="page-footer teal">
+        <div class="container" style="padding-bottom: 1em;">
+            Made with <a class="brown-text text-lighten-3" href="http://materializecss.com" target="blank">Materialize CSS</a>
+            <br> Hosted using <a class="brown-text text-lighten-3" href="https://help.github.com/en/articles/what-is-github-pages" target="blank">Github Pages</a>
+        </div>
+    </footer>
+
+    <!--  Scripts  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script type="text/javascript" src="darkmode.js"></script>
+    <script type="module" src="pdfview.mjs"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
